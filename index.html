@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cinepolis</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background-color: #eeeeee;
+        }
+
+        header { background-color: #003da5; color: white; text-align: center; padding: 20px;
+        }
+
+        nav { background-color: #00266b; text-align: center; padding: 15px;
+        }
+
+        nav a { color: white; text-decoration: none; margin: 12px;
+        }
+
+        .inicio { text-align: center; padding: 25px; background-color: white;
+        }
+
+        section { padding: 20px; text-align: center;
+        }
+
+        .pelicula { display: inline-block; background-color: white; width: 200px; margin: 10px; padding: 10px; border: 1px solid #cccccc;vertical-align: top;
+        }
+        .poster { width: 200px; height: 280px; object-fit: contain; background-color: #dddddd;
+        }
+
+        .boton { display: inline-block; background-color: #003da5; color: white; padding: 10px; text-decoration: none;
+        }
+
+        .formulario { background-color: white; width: 300px; margin: auto; padding: 20px; text-align: left;
+        }
+
+        input { width: 95%; padding: 8px; margin: 5px 0 12px;
+        }
+        button { background-color: #003da5; color: white; padding: 10px; border: none; width: 100%;
+        }
+
+        footer { background-color: #00266b; color: white; text-align: center; padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CINEPOLIS</h1>
+        <p>La magia del cine comienza aqui</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#cartelera">Cartelera</a>
+        <a href="#estrenos">Estrenos</a>
+        <a href="#club">Cinepolis Club</a>
+    </nav>
+
+    <div class="inicio" id="inicio">
+        <h2>Bienvenido a Cinepolis</h2>
+        <p>Encuentra tus peliculas favoritas y descubre los proximos estrenos.</p>
+        <a href="#cartelera" class="boton">Ver peliculas</a>
+    </div>
+
+    <section id="cartelera">
+        <h2>Peliculas en cartelera</h2>
+
+        <div class="pelicula">
+            <img src="digger.jpg" alt="Portada de Digger" class="poster">
+            <h3>Digger</h3>
+            <p>Drama y comedia</p>
+            <a href="#cartelera" class="boton">Mas informacion</a>
+        </div>
+
+        <div class="pelicula">
+            <img src="verity.jpg" alt="Portada de Verity" class="poster">
+            <h3>Verity: La sombra de un engaño</h3>
+            <p>Suspenso y misterio</p>
+            <a href="#cartelera" class="boton">Mas informacion</a>
+        </div>
+
+        <div class="pelicula">
+            <img src="un-mal-partido.jpg" alt="Portada de Un mal partido" class="poster">
+            <h3>Un mal partido</h3>
+            <p>Drama</p>
+            <a href="#cartelera" class="boton">Mas informacion</a>
+        </div>
+    </section>
+
+    <section id="estrenos">
+        <h2>Proximos estrenos</h2>
+
+        <div class="pelicula">
+            <img src="godzilla-minus-zero.jpg" alt="Portada de Godzilla Minus Zero" class="poster">
+            <h3>Godzilla Minus Zero</h3>
+            <p>Accion y ciencia ficcion</p>
+            <p>Estreno: noviembre de 2026</p>
+            <a href="#estrenos" class="boton">Mas informacion</a>
+        </div>
+
+        <div class="pelicula">
+            <img src="clayface.jpg" alt="Portada de Clayface" class="poster">
+            <h3>Clayface</h3>
+            <p>Terror y suspenso</p>
+            <p>Estreno: octubre de 2026</p>
+            <a href="#estrenos" class="boton">Mas informacion</a>
+        </div>
+
+        <div class="pelicula">
+            <img src="avengers-doomsday.jpg" alt="Portada de Avengers Doomsday" class="poster">
+            <h3>Avengers: Doomsday</h3>
+            <p>Accion y superheroes</p>
+            <p>Estreno: diciembre de 2026</p>
+            <a href="#estrenos" class="boton">Mas informacion</a>
+        </div>
+    </section>
+
+    <section id="club">
+        <h2>Cinepolis Club</h2>
+        <p>Ingresa los datos de tu tarjeta y tu cuenta.</p>
+
+        <form class="formulario" action="#">
+            <h3>Iniciar sesion</h3>
+
+            <label for="tarjeta">Numero de tarjeta:</label>
+            <input type="text" id="tarjeta" name="tarjeta" required>
+
+            <label for="correo">Correo electronico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="contrasena">Contrasena:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+
+            <button type="submit">Ingresar</button>
+
+            <p>¿No tienes cuenta?</p>
+            <a href="#club">Registrarse</a>
+        </form>
+    </section>
+
+    <footer>
+        <p>Gardea Hernandez Christian David</p>
+        <p>Grupo: I</p>
+        <p>No. Control: 0545</p>
+    </footer>
+
+</body>
+</html>
